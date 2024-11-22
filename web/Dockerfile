@@ -5,13 +5,16 @@ FROM node:20
 WORKDIR /app
 
 # package.json と package-lock.json をコピー
-COPY src/web/package*.json ./
+COPY postcss.config.mjs ./
+COPY tailwind.config.ts ./
+COPY next.config.mjs ./
+COPY package*.json ./
+COPY tsconfig.json ./
+COPY public ./public
+COPY src ./src
 
 # 依存関係をインストール
-RUN npm install
-
-# ソースコードをコピー
-COPY / .
+RUN npm ci
 
 # アプリケーションのビルド（もし必要であれば）
 RUN npm run build
