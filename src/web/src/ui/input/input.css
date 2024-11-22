@@ -1,0 +1,14 @@
+.input .label{
+    transition: all 0.2s;
+    transform-origin: left top;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    padding: 0 10px;
+    pointer-events: none;
+}
+
+.input .animation-focus{
+    transform: scale(0.75);
+    top: -5px;
+}
