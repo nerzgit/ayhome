@@ -1,8 +1,8 @@
 "use client";
 
-import { equals, reject } from "ramda";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MdCancel } from "react-icons/md";
+import { equals, reject } from "../../../node_modules/@types/ramda";
 import "./text-area-tag.css";
 
 export interface TextAreaTagProps {

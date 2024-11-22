@@ -1,9 +1,9 @@
 "use client";
 
-import { equals } from "ramda";
 import { HTMLAttributes, useEffect, useMemo, useRef, useState } from "react";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { equals } from "../../../node_modules/@types/ramda";
 
 export interface ButtonWaitingProps extends HTMLAttributes<HTMLButtonElement> {
   label: string;

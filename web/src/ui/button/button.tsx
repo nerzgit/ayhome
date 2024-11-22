@@ -1,7 +1,7 @@
 "use client";
 
-import { equals } from "ramda";
 import { HTMLAttributes, useMemo } from "react";
+import { equals } from "../../../node_modules/@types/ramda";
 
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   label: string;

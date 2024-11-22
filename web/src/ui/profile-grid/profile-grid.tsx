@@ -1,5 +1,5 @@
-import { always, cond, equals } from "ramda";
 import { ReactNode, useMemo } from "react";
+import { always, cond, equals } from "../../../node_modules/@types/ramda";
 
 export interface ProfileGridProps {
   title: string;
